@@ -1,13 +1,7 @@
 import { Play, Star, Clock, Clapperboard, Tv } from "lucide-react";
-import { Badge } from "./components/ui/badge";
-import { Button } from "./components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog";
+import { Badge, Button } from "@/components/ui/ui";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+
 const MediaDetailModal = ({ item, open, onClose }) => {
   if (!item) return null;
   return (

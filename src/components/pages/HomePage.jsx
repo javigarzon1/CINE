@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Play, Info } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import MediaCarousel from "@/components/MediaCarousel";
-import MediaDetailModal from "@/components/MediaDetailModal";
+import { Button, Input } from "./components/ui/ui";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "./components/ui/dialog";
+import MediaCarousel from "./components/MediaCarousel";
+import MediaDetailModal from "./components/MediaDetailModal";
 import { getTrending, getMovies, getTvShows, getFeatured } from "@/services/api";
+
+
 const HomePage = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   const featured = getFeatured();

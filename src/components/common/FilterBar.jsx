@@ -1,12 +1,7 @@
 import { Search } from "lucide-react";
-import { Input } from "./components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "./components/ui/select";
+import { Input } from "@/components/ui/ui";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 const FilterBar = ({ search, onSearchChange, year, onYearChange, sort, onSortChange, years, resultCount }) => {
   return (
     <div className="flex flex-col md:flex-row gap-3 items-start md:items-center justify-between mb-6">
