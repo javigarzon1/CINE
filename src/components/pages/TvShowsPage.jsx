@@ -1,8 +1,8 @@
 import { useState, useMemo } from "react";
-import { getTvShows, getPlatforms, getSeriesCategories } from "@/services/api";
-import MediaCard from "@/components/MediaCard";
-import MediaDetailModal from "@/components/MediaDetailModal";
-import { Input } from "@/components/ui/ui";
+import { getTvShows, getPlatforms, getSeriesCategories } from "../../services/api";
+import MediaCard from "../common/MediaCard";
+import MediaDetailModal from "../common/MediaDetailModal";
+import { Input } from "../ui/ui";
 import { Search } from "lucide-react";
 
 const TvShowsPage = () => {

@@ -1,5 +1,5 @@
 import { Star, Play } from "lucide-react";
-import { Badge } from "@/components/ui/ui";
+import { Badge } from "../ui/ui";
 
 const MediaCard = ({ item, onClick }) => {
   return (

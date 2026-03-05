@@ -1,8 +1,8 @@
 import { useState, useMemo } from "react";
-import { getMovies, getMovieCategories } from "@/services/api";
-import MediaCard from "@/components/MediaCard";
-import MediaDetailModal from "@/components/MediaDetailModal";
-import { Input } from "@/components/ui/ui";
+import { getMovies, getMovieCategories } from "../../services/api";
+import MediaCard from "../common/MediaCard";
+import MediaDetailModal from "../common/MediaDetailModal";
+import { Input } from "../../components/ui/ui";
 import { Search } from "lucide-react";
 
 const MoviesPage = () => {
