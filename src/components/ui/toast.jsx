@@ -5,6 +5,7 @@ import { X } from "lucide-react";
 import { cn } from "../lib/utils";
 import { useToast } from "../hooks/use-toast";
 // ─── Toast primitives ───
+
 const ToastProvider = ToastPrimitives.Provider;
 const ToastViewport = React.forwardRef(({ className, ...props }, ref) => (
   <ToastPrimitives.Viewport
@@ -66,8 +67,9 @@ const ToastDescription = React.forwardRef(({ className, ...props }, ref) => (
   <ToastPrimitives.Description ref={ref} className={cn("text-sm opacity-90", className)} {...props} />
 ));
 ToastDescription.displayName = "ToastDescription";
-// ─── Toaster (radix) ───
-function Toaster() {
+
+
+export function Toaster() {
   const { toasts } = useToast();
   return (
     <ToastProvider>
@@ -85,25 +87,7 @@ function Toaster() {
     </ToastProvider>
   );
 }
-// ─── Sonner Toaster ───
-function SonnerToaster(props) {
-  return (
-    <Sonner
-      theme="dark"
-      className="toaster group"
-      toastOptions={{
-        classNames: {
-          toast: "group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg",
-          description: "group-[.toast]:text-muted-foreground",
-          actionButton: "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
-          cancelButton: "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
-        },
-      }}
-      {...props}
-    />
-  );
-}
+
 export {
-  ToastProvider, ToastViewport, Toast, ToastTitle, ToastDescription, ToastClose, ToastAction,
-  Toaster, SonnerToaster,
+  ToastProvider, ToastViewport, Toast, ToastTitle, ToastDescription, ToastClose, ToastAction
 };
