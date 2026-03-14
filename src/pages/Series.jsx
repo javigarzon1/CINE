@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { discoverTV, getTVGenres } from "@/lib/tmdb";
-import FilterBar from "@/components/FilterBar";
-import MediaCard from "@/components/MediaCard";
+import { discoverTV, getTVGenres } from "../lib/tmdb";
+import FilterBar from "../components/FilterBar";
+import MediaCard from "../components/MediaCard";
 
 const Series = () => {
   const [genre, setGenre] = useState("");

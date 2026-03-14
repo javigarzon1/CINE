@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Star } from "lucide-react";
-import { getImageUrl } from "@/lib/tmdb";
+import { getImageUrl } from "../lib/tmdb";
 
 const MediaCard = ({ item, type }) => {
   const mediaType = type || item.media_type || "movie";

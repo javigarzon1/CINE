@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Play, Info } from "lucide-react";
-import { getBackdropUrl } from "@/lib/tmdb";
+import { getBackdropUrl } from "../lib/tmdb";
 
 const HeroSection = ({ item }) => {
   const title = item.title || item.name || "";

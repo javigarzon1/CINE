@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { discoverMovies, getMovieGenres } from "@/lib/tmdb";
-import FilterBar from "@/components/FilterBar";
-import MediaCard from "@/components/MediaCard";
+import { discoverMovies, getMovieGenres } from "../lib/tmdb";
+import FilterBar from "../components/FilterBar";
+import MediaCard from "../components/MediaCard";
 
 const Movies = () => {
   const [genre, setGenre] = useState("");

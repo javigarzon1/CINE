@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import { getTrending, getPopularMovies, getPopularTV, getTopRatedMovies } from "@/lib/tmdb";
-import HeroSection from "@/components/HeroSection";
-import MediaCarousel from "@/components/MediaCarousel";
+import { getTrending, getPopularMovies, getPopularTV, getTopRatedMovies } from "../lib/tmdb";
+import HeroSection from "../components/HeroSection";
+import MediaCarousel from "../components/MediaCarousel";
 
 const Index = () => {
   const { data: trending } = useQuery({ queryKey: ["trending"], queryFn: getTrending });

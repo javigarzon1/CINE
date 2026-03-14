@@ -7,8 +7,8 @@ import {
   getSimilarMovies, getSimilarTV,
   getMovieVideos, getTVVideos,
   getBackdropUrl, getImageUrl,
-} from "@/lib/tmdb";
-import MediaCarousel from "@/components/MediaCarousel";
+} from "../lib/tmdb";
+import MediaCarousel from "../components/MediaCarousel";
 
 const Detail = ({ type }) => {
   const { id } = useParams();
