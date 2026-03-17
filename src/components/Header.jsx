@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Film, Search, Menu, X } from "lucide-react";
-import { searchMulti, getImageUrl } from "@/lib/tmdb";
+import { searchMulti, getImageUrl } from "../lib/tmdb";
 import { cn } from "../lib/utils";
 
 const Header = () => {
